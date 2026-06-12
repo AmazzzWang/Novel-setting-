@@ -1,0 +1,30 @@
+{
+  "name": "wzj-studio",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n proxy,web -c green,cyan \"node server.js\" \"vite\"",
+    "build": "vite build",
+    "start": "node server.js",
+    "server": "node server.js",
+    "web": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lucide-react": "0.383.0",
+    "mammoth": "^1.7.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "vite": "^5.3.1"
+  }
+}
